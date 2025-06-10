@@ -26,6 +26,39 @@ This project aims to improve the robustness of hate speech classifiers by augmen
 
 ---
 
+## 📦 Dependencies
+
+This project requires the following libraries:
+
+- **Core libraries**:  
+  `numpy`, `pandas`, `matplotlib`, `requests`, `os`, `math`, `random`, `json`, `collections`, `typing`
+
+- **Deep Learning & Optimization**:  
+  `torch`, `torch.nn`, `torch.optim`, `torch.nn.functional`, `torch.utils.data`,  
+  `torch.optim.lr_scheduler` (e.g. `LambdaLR`, `ReduceLROnPlateau`)
+
+- **NLP & Transformers**:  
+  `transformers` — includes `AutoTokenizer`, `AutoModelForSequenceClassification`, `Trainer`, `TrainingArguments`,  
+  `get_linear_schedule_with_warmup`, `EarlyStoppingCallback`, `pipeline`, `PreTrainedTokenizerBase`
+
+- **Adversarial Text Augmentation**:  
+  `pyleetspeak` — used for generating leetspeak-based adversarial examples
+
+- **Evaluation & ML Utilities**:  
+  `scikit-learn` — includes `f1_score`, `accuracy_score`, `precision_recall_curve`, `train_test_split`
+
+---
+
+### 🔧 Setup
+
+To install the dependencies, run:
+
+```bash
+pip install -r requirements.txt
+```
+---
+
+
 ## 🧪 Approach
 
 1. **Dataset**: We use the [HateXplain](https://github.com/hate-alert/HateXplain) dataset, which includes multi-annotator rationales and labels for hate, offensive, and normal classes.
